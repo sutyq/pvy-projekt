@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Star Jedi', sans-serif;
+            background-image: url('stars.png'); /* Obrázek hvězd jako pozadí */
+            background-color: #000000;
+            color: #FFFFFF;
+            background-size: cover; /* Zajistí, aby se obrázek přizpůsobil velikosti okna prohlížeče */
+            background-attachment: fixed; /* Zajišťuje, aby se pozadí neválcovalo s obsahem stránky */
+        }
+        header {
+            background-color: #111111;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 0;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+        .navbar {
+            background-color: #111111 !important;
+            border-bottom: 2px solid #FFD700;
+        }
+        .navbar-brand {
+            color: #FFD700 !important;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link {
+            color: #FFFFFF !important;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Star Wars</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Star Wars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="prvni_epizoda.html">Epizoda I</a>
+                    </li>
+                    <!-- Další odkazy na další epizody nebo stránky -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Obsah stránky, který se zobrazí na úvodní stránce -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
