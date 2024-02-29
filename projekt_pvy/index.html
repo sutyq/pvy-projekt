@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Star Jedi', sans-serif;
+            background-image: url('stars.png'); /* Obrázek hvězd jako pozadí */
+            background-color: #000000;
+            color: #FFFFFF;
+            background-size: cover; /* Zajistí, aby se obrázek přizpůsobil velikosti okna prohlížeče */
+            background-attachment: fixed; /* Zajišťuje, aby se pozadí neválcovalo s obsahem stránky */
+        }
+        header {
+            background-color: #111111;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 0;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+        .navbar {
+            background-color: #111111 !important;
+            border-bottom: 2px solid #FFD700;
+        }
+        .navbar-brand {
+            color: #FFD700 !important;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link {
+            color: #FFD700 !important;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        #slideshow {
+            width: 80%; /* Upřesni šířku podle potřeby */
+            margin: 0 auto; /* Zarovnání na střed */
+        }
+
+        .carousel-item img {
+            width: auto;
+            max-width: 100%; /* Zajišťuje, že obrázky nebudou přesahovat rozměry svého kontejneru */
+            height: auto;
+            max-height: 659px; /* Příkladná výška, můžeš ji upravit podle potřeby */
+            object-fit: cover;
+            margin: auto; /* Zarovnání na střed */
+            display: block; /* Zajišťuje, že obrázky budou vycentrovány */
+        }
+
+        .carousel-caption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1.25rem;
+            background-color: rgba(0, 0, 0, 0.5); /* Průhledný černý pozadí */
+            color: #FFD700;
+            text-align: left; /* Zarovnání textu doleva */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%; /* Šířka šipek */
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url('arrowl.png'); /* Nahraď 'your-arrow-icon.svg' vlastní ikonou */
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px; /* Přizpůsob rozměry ikony */
+            height: 40px; /* Přizpůsob rozměry ikony */
+            opacity: 1; /* Výraznější ikona */
+        }
+
+        .carousel-control-next-icon {
+            background-image: url('arrow.png'); /* Nahraď 'your-arrow-icon.svg' vlastní ikonou */
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px; /* Přizpůsob rozměry ikony */
+            height: 40px; /* Přizpůsob rozměry ikony */
+            opacity: 1; /* Výraznější ikona */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Star Wars</h1>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Star Wars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="prvni_epizoda.html">Epizoda I</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Druha_epizoda.html">Epizoda II</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Treti_epizoda.html">Epizoda III</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Obsah stránky, který se zobrazí na úvodní stránce -->
+<div id="slideshow" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="Prvni_epizoda.html">
+                <img src="heroes.jpeg" class="d-block w-100" alt="Slide 1">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>STAR WARS: Epiozda I - Skrytá hrozba</h5>
+                <p>Klikňete na zobrazení příběhu.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="Druha_epizoda.html">
+                <img src="dva.jpg" class="d-block w-100" alt="Slide 2">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>STAR WARS: Epiozda II - Klony útočí</h5>
+                <p>Klikňete na zobrazení příběhu.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="Treti_epizoda.html">
+                <img src="tri.jpg" class="d-block w-100" alt="Slide 3">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>STAR WARS: Epiozda III - Pomsta Sithů</h5>
+                <p>Klikňete na zobrazení příběhu.</p>
+            </div>
+        </div>
+        
+    </div>
+    <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slideshow" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Obsah stránky, který se zobrazí na úvodní stránce -->
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
