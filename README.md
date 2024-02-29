@@ -16,7 +16,7 @@ Anakin s Padmé se ale také vydají Obi-Wana vydají zachránit, ale jsou zajat
 Armáda klonů poráží armádu droidů a hrabě Dooku přilétá na Coruscant oznámit Darth Sidiousovi, že velký sithský plán začal. Obi-Wan, Windu a Yoda mezitím přemýšlí nad tím, že by mohl temný lord ze Sithu ovládat senát, ale nakonec tuto možnost zavrhnou.
 
 Na konci filmu se k nebi zvedají republikové lodě třídy Acclamator s desetitisíci klonovaných vojáků na palubách. Začíná Klonová válka.
-
+ 
 
 
 
