@@ -94,6 +94,32 @@
             height: 40px; /* Přizpůsob rozměry ikony */
             opacity: 1; /* Výraznější ikona */
         }
+        .card {
+        margin-bottom: 20px; /* Prostor mezi jednotlivými kartami */
+        border: 2px solid #FFD700; /* Hranice s tmavou barvou */
+        background-color: #222; /* Tmavé pozadí karty */
+        border-radius: 10px; /* Zaoblení rohů karty */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stínový efekt pro karty */
+    }
+
+    .card-img-top {
+        height: 300px; /* Výška obrázku */
+        object-fit: cover; /* Obrázek se vyplní do rozměrů kontejneru */
+        border-top-left-radius: 10px; /* Zaoblení rohů obrázku */
+        border-top-right-radius: 10px; /* Zaoblení rohů obrázku */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Velikost nadpisu */
+        font-weight: bold; /* Tučné písmo */
+        margin-top: 10px; /* Prostor nad nadpisem */
+        color: #FFD700; /* Barva textu nadpisu */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Velikost textu */
+        color: #DDD; /* Barva textu */
+    }
     </style>
 </head>
 <body>
@@ -163,6 +189,49 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+<!-- Obsah stránky -->
+<div class="container">
+    <h2 class="text-center mt-5 mb-3" style="color: #FFD700;">TVŮRCI</h2>
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="card">
+                <!-- Přidejte obrázek osoby -->
+                <img src="petr.jpg" class="card-img-top" alt="Name">
+                <div class="card-body">
+                    <!-- Jméno osoby -->
+                    <h5 class="card-title">Petr Sochor</h5>
+                    <!-- Funkce osoby -->
+                    <p class="card-text">Hlavní kodér</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <!-- Přidejte obrázek osoby -->
+                <img src="lukynaus.jpg" class="card-img-top" alt="Name">
+                <div class="card-body">
+                    <!-- Jméno osoby -->
+                    <h5 class="card-title">Lukáš Vacek</h5>
+                    <!-- Funkce osoby -->
+                    <p class="card-text">Hlavní stylista</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <!-- Přidejte obrázek osoby -->
+                <img src="viktor.jpg" class="card-img-top" alt="Name">
+                <div class="card-body">
+                    <!-- Jméno osoby -->
+                    <h5 class="card-title">Viktor Steiner</h5>
+                    <!-- Funkce osoby -->
+                    <p class="card-text">Hlavní scénárista a návrhář</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Obsah stránky, který se zobrazí na úvodní stránce -->
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
